@@ -47,10 +47,7 @@ Here’s a breakdown of how I got up and running below:
 - Follow the Gulp docs [here](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
 
 
-
-### Enjoy!
-
-
+---
 
 ### Notes
 - I had trouble with Node/NPM/Gulp before realising Ubuntu won’t automatically upgrade from 14.04 to 16.04 - as mentioned in this [article](https://blogs.msdn.microsoft.com/commandline/2017/04/11/windows-10-creators-update-whats-new-in-bashwsl-windows-console/).
