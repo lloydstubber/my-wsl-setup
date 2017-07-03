@@ -8,51 +8,51 @@ Here’s a breakdown of how I got up and running below:
 
 
 
-## Download & Install the WSL
+### Download & Install the WSL
 - Follow the very thorough instructions [here](https://msdn.microsoft.com/en-au/commandline/wsl/install_guide)
 
 
 
-## Get your terminal looking pretty
+### Get your terminal looking pretty
 - Download Hyper.js [here](https://hyper.is/)
   - I went with the 'hypernasa' theme
 
 
 
-## Automatically open in Bash
+### Automatically open in Bash
 - Open up Hyper and type `Ctrl` + `,`
 - Scroll down to shell and change it to `C:\\Windows\\System32\\bash.exe`
 
 
 
-## Install Git
+### Install Git
 - Run this `sudo apt update`
 - Then run `sudo apt install git`
 
 
 
-## Setup a SSH key and link to your Github
+### Setup a SSH key and link to your Github
 - Follow the Linux steps [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux) to create a key and add it to your SSH agent
 - Then type `cat ~/.ssh/id_rsa.pub`
 - Copy your key from the terminal and paste it into your Github keys
 
 
 
-## Install nvm
+### Install nvm
 - Follow the instructions [here](https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c) which will get you running on Node/NPM and can easily roll-back versions to suit.
 
 
 
-## Install Gulp CLI
+### Install Gulp CLI
 - Follow the Gulp docs [here](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
 
 
 
-## Enjoy!
+### Enjoy!
 
 
 
-## Notes
+### Notes
 - I had trouble with Node/NPM/Gulp before realising Ubuntu won’t automatically upgrade from 14.04 to 16.04 - as mentioned in this [article](https://blogs.msdn.microsoft.com/commandline/2017/04/11/windows-10-creators-update-whats-new-in-bashwsl-windows-console/).
   - If you’re in the same boat, upgrade via these [instructions](https://help.ubuntu.com/lts/serverguide/installing-upgrading.html).
 
