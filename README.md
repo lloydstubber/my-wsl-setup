@@ -38,7 +38,7 @@ Here’s a breakdown of how I got up and running below:
 
 
 
-### Install nvm
+### Install Node Version Manager
 - Follow the instructions [here](https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c) which will get you running on Node/NPM and can easily roll-back versions to suit.
   - With running NPM/Gulp I had issues with version 8 of Node. So I rolled back to version 5 and that fixed NPM install errors.
 
