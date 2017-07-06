@@ -13,16 +13,29 @@ Here’s a breakdown of how I got up and running below:
 
 
 
-### Get your terminal looking pretty
+### Get your terminal looking pretty pt.1
 - Download Hyper.js [here](https://hyper.is/)
   - I went with the 'hypernasa' theme
-
 
 
 ### Automatically open in Bash
 - Open up Hyper and type `Ctrl` + `,`
 - Scroll down to shell and change it to `C:\\Windows\\System32\\bash.exe`
 
+
+### Install Zsh
+- Run this `sudo apt-get install zsh`
+- Open your bash profile `nano ~/.bashrc`
+- Add this to set it to use ZSH as default:
+```
+if [ -t 1 ]; then
+exec zsh
+fi
+```
+
+### Get your terminal looking pretty pt.2
+- Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+  - Read docs [here](https://github.com/robbyrussell/oh-my-zsh) on how to add more plugins and change themes (I went with 'cloud').
 
 
 ### Install Git
