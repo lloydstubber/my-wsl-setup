@@ -4,6 +4,8 @@ Quick rundown on my current setup  Windows Subsystem for Linux.
 
 After a few headaches with running the Git Bash on Windows I’ve decided to move over the WSL for all development purposes. I’m very new to Linux so this is a very top-level overview so feel free to submit any changes.
 
+![Shell Screenshot](shell.png "Shell Screenshot")
+
 Here’s a breakdown of how I got up and running below:
 
 
@@ -78,3 +80,4 @@ compinit
   - If you’re in the same boat, upgrade via these [instructions](https://help.ubuntu.com/lts/serverguide/installing-upgrading.html).
 - I also had trouble with older versions of Windows 10 not liking Gulp via the WSL - inotify and socket issues. Make sure you're running on the Creators Update or Insiders Program versions.
 - If your shell is running slow (mine was) switch from nvm to [n](https://github.com/mklement0/n-install) and install it with their curl command. First make sure to uninstall nvm and get rid of any trace of Nodejs/npm. If n doesn't work as a command on zsh, it would have installed it's path into your ~/.bashrc so just copy it over to your ~/.zshrc.
+- A lot of Hyper plugins don't work with Windows so make sure to check before installing them.
