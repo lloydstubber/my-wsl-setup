@@ -14,7 +14,6 @@ Here’s a breakdown of how I got up and running below:
 - Follow the very thorough instructions [here](https://msdn.microsoft.com/en-au/commandline/wsl/install_guide)
 
 
-
 ### Get your terminal looking pretty pt.1
 - Download Hyper.js [here](https://hyper.is/)
   - I went with the 'hyperblue' theme
@@ -56,7 +55,6 @@ compinit
 - Then run `sudo apt install git`
 
 
-
 ### Setup a SSH key and link to your Github
 - Follow the Linux steps [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux) to create a key and add it to your SSH agent
 - Then type `cat ~/.ssh/id_rsa.pub`
@@ -72,7 +70,14 @@ compinit
 ### Install Gulp CLI
 - Follow the Gulp docs [here](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
 
-
+### Aliases
+- Just to test out using aliases, I picked a few things I type a lot into the terminal that could save me some keystrokes. Add this to your .zshrc file to do the same and add anything else you see fit.
+```
+# aliases for git
+alias ga='git add -A'
+alias gs='git status'
+alias gps='git push -u origin master'
+```
 ---
 
 ### Notes
