@@ -62,8 +62,8 @@ compinit
 
 
 
-### Install Node Version Manager
-- Follow the instructions [here](https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c) which will get you running on Node/npm and can easily roll-back versions to suit.
+### Install N (alternative to Node Version Manager)
+- My shell was running slow with nvm so I switched to [n](https://github.com/mklement0/n-install). Just install it with their curl command and if n doesn't work as a command on zsh, it would have installed it's path into your ~/.bashrc so just copy it over to your ~/.zshrc.
 
 
 
@@ -84,5 +84,4 @@ alias gps='git push -u origin master'
 - I had trouble with Node/npm/Gulp before realising Ubuntu won’t automatically upgrade from 14.04 to 16.04 - as mentioned in this [article](https://blogs.msdn.microsoft.com/commandline/2017/04/11/windows-10-creators-update-whats-new-in-bashwsl-windows-console/).
   - If you’re in the same boat, upgrade via these [instructions](https://help.ubuntu.com/lts/serverguide/installing-upgrading.html).
 - I also had trouble with older versions of Windows 10 not liking Gulp via the WSL - inotify and socket issues. Make sure you're running on the Creators Update or Insiders Program versions.
-- If your shell is running slow (mine was) switch from nvm to [n](https://github.com/mklement0/n-install) and install it with their curl command. First make sure to uninstall nvm and get rid of any trace of Nodejs/npm. If n doesn't work as a command on zsh, it would have installed it's path into your ~/.bashrc so just copy it over to your ~/.zshrc.
 - A lot of Hyper plugins don't work with Windows so make sure to check before installing them.
