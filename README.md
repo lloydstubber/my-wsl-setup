@@ -85,3 +85,9 @@ alias gps='git push -u origin master'
   - If you’re in the same boat, upgrade via these [instructions](https://help.ubuntu.com/lts/serverguide/installing-upgrading.html).
 - I also had trouble with older versions of Windows 10 not liking Gulp via the WSL - inotify and socket issues. Make sure you're running on the Creators Update or Insiders Program versions.
 - A lot of Hyper plugins don't work with Windows so make sure to check before installing them.
+
+### Easter Eggs
+- A few goodies I installed recently for fun:
+  - Cowsay `sudo apt-get install cowsay`
+  - htop `sudo apt-get install htop`
+  - Isn't via apt-get but [Bash-Snippets](https://github.com/alexanderepstein/Bash-Snippets) is great
