@@ -74,9 +74,11 @@ compinit
 - Just to test out using aliases, I picked a few things I type a lot into the terminal that could save me some keystrokes. Add this to your .zshrc file to do the same and add anything else you see fit.
 ```
 # aliases for git
-alias ga='git add -A'
-alias gs='git status'
-alias gps='git push -u origin master'
+alias add='git add -A'
+alias status='git status'
+alias push='git push -u origin master'
+alias pull='git pull'
+alias log='git log'
 ```
 ---
 
