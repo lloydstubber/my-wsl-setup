@@ -87,6 +87,7 @@ alias log='git log'
   - If you’re in the same boat, upgrade via these [instructions](https://help.ubuntu.com/lts/serverguide/installing-upgrading.html).
 - I also had trouble with older versions of Windows 10 not liking Gulp via the WSL - inotify and socket issues. Make sure you're running on the Creators Update or Insiders Program versions.
 - A lot of Hyper plugins don't work with Windows so make sure to check before installing them.
+- If you're having trouble with Ruby and it's sudo/gem issues, look at Ruby Version Manager as an alternative.
 
 ### Easter Eggs
 - A few goodies I installed recently for fun:
