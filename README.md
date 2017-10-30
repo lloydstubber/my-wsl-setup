@@ -4,11 +4,9 @@ Quick rundown on my current setup  Windows Subsystem for Linux.
 
 After a few headaches with running the Git Bash on Windows I’ve decided to move over the WSL for all development purposes. I’m very new to Linux so this is a very top-level overview so feel free to submit any changes.
 
-![Shell Screenshot](shell.png "Shell Screenshot")
-
 Here’s a breakdown of how I got up and running below:
 
-
+![Shell Screenshot](shell.png "Shell Screenshot")
 
 ### Download & Install the WSL
 - Follow the very thorough instructions [here](https://msdn.microsoft.com/en-au/commandline/wsl/install_guide)
@@ -65,13 +63,11 @@ compinit
 ### Install N (alternative to Node Version Manager)
 - My shell was running slow with nvm so I switched to [n](https://github.com/mklement0/n-install). Just install it with their curl command and if n doesn't work as a command on zsh, it would have installed it's path into your ~/.bashrc so just copy it over to your ~/.zshrc.
 
-
-
 ### Install Gulp CLI
 - Follow the Gulp docs [here](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
 
 ### Aliases
-- Just to test out using aliases, I picked a few things I type a lot into the terminal that could save me some keystrokes. Add this to your .zshrc file to do the same and add anything else you see fit.
+- Just to test out using aliases, I picked a few things I type a lot into the terminal that could save me some keystrokes. Add this to your .zshrc file to do the same and add anything else you see fit:
 ```
 # aliases for git
 alias add='git add -A'
@@ -80,6 +76,15 @@ alias push='git push -u origin master'
 alias pull='git pull'
 alias log='git log'
 ```
+
+### Change default editor
+- Out of the box the default editor is nano and no syntax highlighting can make it pretty tough to navigate through. So I've decided to switch the default editor to Vim:
+```
+# Set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+```
+
 ---
 
 ### Notes
