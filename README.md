@@ -80,6 +80,9 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 ```
 
+### Always Update & Upgrade
+Every few days it's a good idea to run `sudo apt update` then `sudo apt upgrade` to get the latest updates from Ubuntu.
+
 ### Shopify Themekit
 I've recently been getting into Shopify and ran into a bit of a snag when using their [ThemeKit](https://shopify.github.io/themekit/) via the WSL. After creating a theme or downloading an existing one, then trying to run `theme open` to view changes. This command tries to open a browser with xdg-open - which doesn't work. What you'll need to do is create a shell script to get around this. Seeing as I didn't know how to create one prior to this, I'll add the details below:
 - First, navigate to `usr/local/bin` as we'll need the script in here so it can be executed.
