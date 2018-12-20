@@ -58,27 +58,19 @@ compinit
 - Then type `cat ~/.ssh/id_rsa.pub`
 - Copy your key from the terminal and paste it into your Github keys
 
-### Install N (alternative to Node Version Manager)
-My shell was running slow with nvm so I switched to [n](https://github.com/mklement0/n-install). Just install it with their curl command and if n doesn't work as a command on zsh, it would have installed it's path into your ~/.bashrc so just copy it over to your ~/.zshrc.
-
-***Update:** I recently had issues with N and it switching versions (npm stopped working entirely) and switched back to NVM. It is still a little slow but is a known issue. Looking into it al ittle more I came across this which has shaved off startup time quite a bit:*
+### Install NVM
+So you have the ability to switch between Node/npm versions easily, this is the best tool out there for the WSL. I've tried a few and have come back to this.
+- Run this to install:
 ```
-# Defer initialization of nvm until nvm, node or a node-dependent command is
-# run. Ensure this block is only run once if .bashrc gets sourced multiple times
-# by checking whether __init_nvm is a function.
-if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; then
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack')
-  function __init_nvm() {
-    for i in "${__node_commands[@]}"; do unalias $i; done
-    . "$NVM_DIR"/nvm.sh
-    unset __node_commands
-    unset -f __init_nvm
-  }
-  for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
-fi
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
+- This will then have installed the PATH into your `~/.bashrc` so pop the below into the bottom of your `~/.zshrc` and restart your terminal:
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+- Now with a `nvm -v` the command should work and you can install whatever version you'd like with `nvm install 8.12.0`.
 
 ### Install Gulp CLI
 - Follow the Gulp docs [here](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
